@@ -1,0 +1,11 @@
+What kind of error handling would you implement?
+Firstly, we have to check if the json file entered in the program exists and can be opened.
+In order to check the validity of parsing, we can check if the data loaded from json is a dictionary.
+It would be suitable to validate if each instance contains expected keys and the values are of a valid data type for each key.
+
+
+
+What should be done about invalid entries?
+IF the entries are invalid, we can exclude them from our data.
+We could also speculate about the intended value and correct these values, but it is rather risky and certainly not suitable
+for sensitive data.
