@@ -1,0 +1,16 @@
+What kind of error handling would you implement?
+Error handling when user inputs invalid data, that is:
+ -the number of points smaller than three, including negative numbers
+ -the number of points is not an integer
+ -the number of points is not a number
+
+How to validate that the triangle is valid?
+ -based on the triangle inequality theorem, the sum of two sides must be grater than the third one
+ -all of the three points cannot be collinear
+
+How to speed up the algorithm to avoid calculating all possible combinations?
+ We can try using Delaunay triangulation algorithm.
+ It is a greedy algorithm that starts with dividing the set of points into
+ triangles in such a way that no point is inside the circumcircle of any triangle. We can combine in with divine and conquer algorithm.
+ We can divide the set of points into two subsets and then combine the results.
+ Meriging the results can be done obtaining the final running time of O(n log n).
